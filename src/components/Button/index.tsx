@@ -1,5 +1,11 @@
 import React from 'react';
-import { TouchableOpacity, TouchableHighlightProps, Text, ColorValue, ActivityIndicator } from 'react-native';
+import { 
+  TouchableOpacity, 
+  TouchableHighlightProps, 
+  Text, 
+  ColorValue, 
+  ActivityIndicator 
+} from 'react-native';
 import {AntDesign} from '@expo/vector-icons';
 
 import { styles } from './styles';
@@ -12,7 +18,13 @@ type Props = TouchableHighlightProps & {
   isLoading?: boolean;
 }
 
-export function Button({title, color, backgroundColor, icon, isLoading= false, ...rest}: Props){
+export function Button({title, 
+  color, 
+  backgroundColor, 
+  icon, 
+  isLoading= false, 
+  ...rest
+}: Props){
   return (
     <TouchableOpacity
       style={[styles.button, {backgroundColor}]}

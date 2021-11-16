@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text} from 'react-native';
 import { UserPhoto } from '../UserPhoto';
-import {MotiView} from 'moti';
+import { MotiView } from 'moti';
 
 import { styles } from './styles';
 

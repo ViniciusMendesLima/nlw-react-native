@@ -69,7 +69,9 @@ function AuthProvider({ children }: AuthProviderProps) {
   }
 
   async function signOut() {
-    
+    setUser(null);
+    await AsyncStorage.removeItem(USER_STORAGE);
+    await AsyncStorage.removeItem(TOKEN_STORAGE);
   }
 
   useEffect(() => {
@@ -105,4 +107,4 @@ function useAuth() {
   return context;
 }
 
-export {AuthProvider, useAuth}
+export {AuthProvider, useAuth }
